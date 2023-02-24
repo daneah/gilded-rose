@@ -5,7 +5,10 @@ class GildedRose:
         self.days_remaining = days_remaining
 
     def tick(self):
-        if self.name != "Aged Brie" and self.name != "Backstage passes to a TAFKAL80ETC concert":
+        if (
+            self.name != "Aged Brie"
+            and self.name != "Backstage passes to a TAFKAL80ETC concert"
+        ):
             if self.quality > 0:
                 if self.name != "Sulfuras, Hand of Ragnaros":
                     self.quality -= 1
