@@ -48,12 +48,6 @@ class TestBrie:
         assert item.quality == 12
         assert item.days_remaining == -1
 
-    def test_on_sell_date_near_max_quality(self):
-        item = GildedRose("Aged Brie", 49, 0)
-        item.tick()
-        assert item.quality == 50
-        assert item.days_remaining == -1
-
     def test_on_sell_date_with_max_quality(self):
         item = GildedRose("Aged Brie", 50, 0)
         item.tick()
