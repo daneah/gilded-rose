@@ -60,6 +60,7 @@ class BackstagePasses(Item):
             self._quality += 1
         return
 
+
 DEFAULT_ITEM = Item
 NAME_TO_ITEM = {
     "Normal": Normal,
